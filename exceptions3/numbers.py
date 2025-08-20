@@ -1,3 +1,17 @@
-x = int(input("What is x? "))
+def main():
+    x = get_int("What is the value of x?: ")
+    print(f"x is {x}")
 
-print(f"The x is {x}")
+def get_int(prompt):
+    while True:
+        try:
+            return int(input(prompt))
+            # return x
+        except:
+            # print("Please give me an integer! ")
+            pass
+        
+            
+
+main()
+
